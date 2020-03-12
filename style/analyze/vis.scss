@@ -1,0 +1,10 @@
+.shop-vis {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .el-tabs__content {
+    display: none;
+  }
+}

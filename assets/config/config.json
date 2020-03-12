@@ -1,0 +1,5 @@
+{
+  "ZUUL_URL": "http://101.132.155.34:1202",
+  "AUTH_URL": "http://101.132.155.34:1202/auth",
+  "PRODUCT_URL": "http://localhost:1202/product"
+}

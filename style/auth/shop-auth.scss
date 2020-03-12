@@ -1,0 +1,14 @@
+.shop-auth {
+  .shop-auth-authorize {
+    .el-dialog {
+      height: 80%;
+      display: flex;
+      flex-direction: column;
+
+      .el-dialog__body {
+        flex: 1;
+        overflow: auto;
+      }
+    }
+  }
+}
