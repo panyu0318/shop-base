@@ -1,6 +1,6 @@
 <template>
   <div class="shop-sale" style="height: 100%;">
-    <shop-bread></shop-bread>
+    <py-bread></py-bread>
     <el-form class="form-item-flex shop-search">
       <el-form-item label="统计日期" style="width:50%">
         <el-date-picker
@@ -27,27 +27,24 @@
     </el-form>
     <div class="shop-sale-middle">
       <div>
-        <myEcharts :echartsOption="leftOption" type="bar"></myEcharts>
+        <py-echarts :echartsOption="leftOption" type="bar"></py-echarts>
       </div>
       <div style="margin-left: 10px;">
-        <myEcharts :echartsOption="rightOption" type="radar"></myEcharts>
+        <py-echarts :echartsOption="rightOption" type="radar"></py-echarts>
       </div>
     </div>
     <div class="shop-sale-bottom">
-      <myEcharts :echartsOption="bottomOption" type="line"></myEcharts>
+      <py-echarts :echartsOption="bottomOption" type="line"></py-echarts>
     </div>
   </div>
 </template>
 <script>
 import pickerOptions from '../../mixins/pickerOptions/pickerOptions'
 import dateUtils from '../../utils/dateUtils'
-import myEcharts from '../../components/echarts'
-// import echarts from 'echarts'
 
 export default {
   name: 'sale',
   mixins: [pickerOptions],
-  components: { myEcharts },
   data () {
     return {
       date: null,

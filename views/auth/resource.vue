@@ -1,6 +1,6 @@
 <template>
   <div style="height: 100%;">
-    <search-tree-table>
+    <py-search-tree-table>
       <template slot="top">
         <el-form :model="param" class="form-item-flex">
           <el-form-item label="资源类型" style="width:25%">
@@ -83,7 +83,7 @@
           :total="total">
         </el-pagination>
       </template>
-    </search-tree-table>
+    </py-search-tree-table>
     <el-dialog
       :close-on-click-modal="false"
       :title="dialogTitle"

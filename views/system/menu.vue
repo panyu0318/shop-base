@@ -1,6 +1,6 @@
 <template>
   <div style="height: 100%;">
-    <search-tree-table>
+    <py-search-tree-table>
       <template slot="top">
         <el-form :model="param" class="form-item-flex">
           <el-form-item label="名称" style="width:25%">
@@ -82,7 +82,7 @@
           :total="total">
         </el-pagination>
       </template>
-    </search-tree-table>
+    </py-search-tree-table>
     <el-dialog
       :close-on-click-modal="false"
       :title="dialogTitle"
@@ -158,14 +158,13 @@
 
 <script>
 import api from '../../service/menu'
-import { mapGetters, mapActions } from 'vuex'
-import searchTreeTable from '../../components/search-tree-table'
 import searchResetPage from '../../mixins/search_reset_page'
 import upload from '../../mixins/upload'
+import {createNamespacedHelpers} from 'vuex'
+const {mapGetters, mapActions} = createNamespacedHelpers('shopStore')
 
 export default {
   name: 'shop_menu',
-  components: { searchTreeTable },
   mixins: [searchResetPage, upload],
   data () {
     return {

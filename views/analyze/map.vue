@@ -1,14 +1,11 @@
 <template>
   <div style="height: 100%;">
-    <BaiduMap style="height: 100%;" center="苏州"></BaiduMap>
+    <py-baidu-map style="height: 100%;" center="苏州"></py-baidu-map>
   </div>
 </template>
 
 <script>
-import BaiduMap from '../../components/baidu-map'
-
 export default {
-  name: 'shop-map',
-  components: { BaiduMap }
+  name: 'shop-map'
 }
 </script>
